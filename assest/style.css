@@ -1,0 +1,110 @@
+body {
+background-color: #f0f0f0;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+height: 100vh;
+margin: 0;
+place-items: center;
+position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+top: 0;
+left: 50%;
+width: 1px;
+background-color: #cccccc;
+transform: translateX(-50%);
+}
+body::after {
+content: "";
+position: absolute;
+bottom: 0;
+top: 50%;
+left: 0;
+right: 0;
+height: 1px;
+background-color: #cccccc;
+transform: translateY(-50%);
+
+
+
+}
+.flag {
+width: 200px;
+height: 120px;
+display: flex;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.france {
+flex-direction: row;
+}
+.france div {
+    flex: 1;
+}
+.france .f-red {
+    background-color: red;
+}
+.france .f-white {
+    background-color: white;
+}
+.france .f-blue {
+    background-color: blue;
+}
+.belgium {
+    flex-direction: row;
+}
+.belgium div {
+    flex: 1;
+}
+.belgium .b-black {
+    background-color: black;
+}
+.belgium .b-yellow  {
+    background-color: yellow;
+}
+.belgium .b-red {
+    background-color: red;
+}
+.syria {
+   flex-direction: column;
+   position: relative;
+}
+.syria div {
+    flex: 1;
+}
+.syria .s-green {
+    background-color: green;
+}
+.syria .s-white {
+    background-color: white;
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+.syria .s-black {
+    background-color: black;
+}
+.star {
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 100%;
+}
+.italy {
+    flex-direction: row;
+}
+.italy div {
+    flex: 1;
+}
+.italy .i-green {
+    background-color: green;
+}
+.italy .i-white {
+    background-color: white;
+}
+.italy .i-red {
+    background-color: red;
+}
